@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jena Reasoning Endpoint</title>
+</head>
+<body>
+    <h1>Jena Reasoning Endpoint</h1>
+    <form method="post" action="reasoner">
+        <label for="sourceUrl">XHTML File URL with RDFa Content:</label><br>
+        <input type="text" id="sourceUrl" name="sourceUrl" size="80"><br><br>
+
+        <label for="rules">Rules (One per line):</label><br>
+        <textarea id="rules" name="rules" rows="5" cols="80"></textarea><br><br>
+
+        <label for="sparqlQuery">SPARQL Query:</label><br>
+        <textarea id="sparqlQuery" name="sparqlQuery" rows="10" cols="80"></textarea><br><br>
+
+        <input type="submit" value="Run Query">
+    </form>
+
+    <!-- Placeholder for results -->
+    <div id="results">
+        <!-- Results will be displayed here -->
+    </div>
+</body>
+</html>
